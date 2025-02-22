@@ -1,0 +1,218 @@
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+      position: sticky;
+      top: 0;
+      color: #ff0077; /* Set the font color */
+      z-index: 1000;
+      display: flex;
+      gap: 5rem;
+  }
+  
+  .navbar-brand {
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+      font-size: 20px; /* Set the font size */
+      color:#fff ;
+      
+      padding: 0 0 0 0;
+      transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .nav-link:hover {
+      color: #ff4081 !important; /* Change color on hover */
+  }
+  
+  /* Buttons */
+  .btn-pink {
+      font-size: 30px; /* Adjust font size */
+      background: linear-gradient(45deg, #ff0077, #ff4081);
+      border: none;
+      color: #fff;
+      padding: 2rem 5%;
+      border-radius: 80px;
+      transition: 0.3s;
+  }
+  
+  .btn-pink:hover {
+      font-size: 30px; /* Slightly enlarge font size on hover */
+      background: linear-gradient(45deg, #ff4081, #ff0077);
+      box-shadow: 0 0 10px rgba(255, 0, 119, 0.7); /* Add glow effect */
+  }
+  
+  /* Hero Section */
+  .hero {
+      position: relative;
+      text-align: center;
+      background-color: #1a1a1a;
+      color: #fff;
+  }
+  
+  /* Profile Image */
+  .profile-img img {
+      max-width: 100%;     /* Ensure image scales within its container */
+      height: auto;        /* Maintain aspect ratio */
+      border: 5px solid #ff0077;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ff0077;
+  }
+  
+  
+  
+  /* Text Colors */
+  .text-pink {
+      color: #ff0077;
+  }
+  
+  /* Buttons */
+  .btn-pink {
+      background: linear-gradient(45deg, #ff0077, #ff4081);
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      transition: 0.3s;
+  }
+  
+  .btn-pink:hover {
+      background: linear-gradient(45deg, #ff4081, #ff0077);
+  }
+  
+  /* Social Icons */
+  .btn-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: 0.3s;
+  }
+  
+  .btn-circle:hover {
+      background-color: #ff0077;
+      color: #fff;
+  }
+  
+  /* About Me Section */
+  .glowing-img-wrapper {
+      position: relative;
+      display: inline-block;
+  
+  }
+  
+  .glowing-img {
+      width: 450px;  /* Adjust width */
+      height: 450px; /* Adjust height */
+      border: 5px solid #ff0077;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ff0077;
+      transition: 0.3s ease-in-out;
+  }
+  
+  .glowing-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #ff0077, 0 0 60px #ff4081;
+  }
+  h1{
+      font-size: 50px;
+  }
+  h2{
+      font-size: 30px;
+  }
+  p{
+      font-size: 25px;
+  }
+  
+  /* My Services Section */
+  .service-card {
+      border: none;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 0, 119, 0.7);
+  }
+  
+  .bg-pink {
+      background-color: #ff0077;
+  }
+  
+  .bg-gray {
+      background-color: #333333;
+  }
+  
+  .text-pink {
+      color: #ff0077;
+  }
+  
+  /* My Work Section */
+  .work-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      padding: 0;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .work-card img {
+      width: 700px;
+      height: 250px;
+      transition: transform 0.5s;
+      padding: 8px;
+  }
+  
+  .work-card:hover img {
+      transform: scale(1.1);
+  }
+  
+  .work-card .work-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      color: white;
+      text-align: center;
+  }
+  
+  .work-card:hover {
+      box-shadow: 0 0 20px rgba(255, 0, 119, 0.7);
+  }
+  
+  .text-pink {
+      color: #ff0077;
+  }
+  
+  /* Contact Section */
+  #contact input,
+  #contact textarea {
+      border: none;
+      outline: none;
+      color: #fff;
+      border-radius: 2px;
+      padding: 5px;
+      width: 700px;
+      height: 50px;
+  }
+  #contact button {
+      box-shadow: 20px #ff0077;
+  }
+  
