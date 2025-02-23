@@ -1,1 +1,1 @@
-update index.html
+I am an MCA student with a strong foundation in programming and web development. My technical skills include Java, Python, HTML, CSS, and Data Science. I have worked on projects like Credit Card Fraud Detection (Python, Data Science).
