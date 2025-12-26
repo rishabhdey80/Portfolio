@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science | Rishabh Dey</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init({ publicKey: "47nxmx8P60EIVTAAw" });
+        })();
+
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                emailjs.sendForm('service_tbrsgde', 'template_crmrxqu', this)
+                .then(() => {
+                    let toast = document.getElementById("toast-success");
+                    toast.className = "show";
+                    setTimeout(() => toast.className = toast.className.replace("show",""), 4000);
+                    this.reset();
+                });
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark glass-navbar fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Portfolio.</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Data Science</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="portfolio" class="section-dark">
+    <div class="container">
+        <h2 class="text-center text-white mb-4">
+            Data <span class="text-blue">Science</span>
+        </h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="glass glass-3d glass-padding text-center text-white">
+                    <img src="DataScience.png" class="img-fluid rounded mb-3">
+                    <h5 class="text-blue">Credit Card Fraud Detection</h5>
+                    <p>Python, ML, Pandas, NumPy</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="glass glass-3d glass-padding text-center text-white">
+                    <img src="DataScience.png" class="img-fluid rounded mb-3">
+                    <h5 class="text-blue">Data Analysis Project</h5>
+                    <p>Visualization & Insights</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section-dark">
+    <div class="container">
+        <h2 class="text-center text-white mb-4">Contact <span class="text-blue">Me</span></h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 glass glass-3d glass-padding text-white">
+                <form id="contact-form">
+                    <input name="user_name" class="form-control glass-input mb-3" placeholder="Your Name" required>
+                    <input name="user_email" class="form-control glass-input mb-3" placeholder="Your Email" required>
+                    <input name="subject" class="form-control glass-input mb-3" placeholder="Subject" required>
+                    <textarea name="message" class="form-control glass-input mb-3" rows="4" placeholder="Message" required></textarea>
+                    <button class="btn btn-blue w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="toast-success">✅ Successfully you’ve done this</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

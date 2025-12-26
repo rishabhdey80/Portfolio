@@ -1,0 +1,134 @@
+body {
+    background: #050814;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Sections */
+.section-dark {
+    padding: 100px 0;
+}
+
+/* Blue Theme */
+.text-blue {
+    color: #00bfff;
+}
+
+/* Button */
+.btn-blue {
+    background: linear-gradient(135deg, #00bfff, #005eff);
+    color: blue;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: 0 0 20px rgba(0,191,255,.6);
+    transition: .4s;
+}
+
+.btn-blue:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 0 40px rgba(0,191,255,.9);
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(0,191,255,0.3);
+    box-shadow: 0 8px 32px rgba(0,0,0,.45);
+}
+
+.glass-padding {
+    padding: 30px;
+}
+
+/* 3D Effect */
+.glass-3d {
+    transform-style: preserve-3d;
+    transition: .5s ease;
+}
+
+.glass-3d:hover {
+    transform: rotateX(8deg) rotateY(-8deg) translateY(-12px);
+    box-shadow: 0 0 40px rgba(0,191,255,.6);
+}
+
+/* Navbar */
+.glass-navbar {
+    background: rgba(5,8,20,0.75) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,191,255,.3);
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background: radial-gradient(circle at top, #0b1c3a, #050814);
+}
+
+/* Inputs */
+.glass-input {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(0,191,255,.3);
+    color: white;
+}
+
+.glass-input::placeholder {
+    color: #9ad8ff;
+}
+
+/* Profile Glow */
+.glowing-img {
+    box-shadow: 0 0 30px rgba(0,191,255,.8);
+    transition: .4s;
+}
+
+.glowing-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 70px rgba(0,191,255,1);
+}
+
+/* Social Buttons */
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toast-success {
+    visibility: hidden;
+    min-width: 280px;
+    background: rgba(0, 191, 255, 0.9);
+    color: #000;
+    text-align: center;
+    border-radius: 12px;
+    padding: 16px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    font-weight: 600;
+    box-shadow: 0 0 30px rgba(0,191,255,0.8);
+    backdrop-filter: blur(10px);
+}
+
+/* Show animation */
+#toast-success.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 3s;
+}
+
+@keyframes fadein {
+    from { bottom: 0; opacity: 0; }
+    to { bottom: 40px; opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { bottom: 40px; opacity: 1; }
+    to { bottom: 0; opacity: 0; }
+}
