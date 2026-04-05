@@ -13,17 +13,22 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "47nxmx8P60EIVTAAw",
+      });
+   })();
+</script>
 
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "47nxmx8P60EIVTAAw",
-        });
-    })();
-    </script>
+   
     <script type="text/javascript">
 window.onload = function () {
     document.getElementById('contact-form')
